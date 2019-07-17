@@ -36,6 +36,9 @@ export default {
   created () {},
   methods: {
     async handleFollow () {
+      if (!this.$checkLogin()) {
+        return
+      }
       this.isFollowLoading = true
       try {
         const authId = this.article.aut_id
