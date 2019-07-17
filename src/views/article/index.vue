@@ -11,8 +11,12 @@
       class="auth-info"
       :article="article"
     />
+
     <div class="ariticle-content" v-html="article.content"></div>
-    <MoreAction />
+
+    <MoreAction
+      :article="article"
+    />
     <RecommendSearch />
     <RecommendArticle />
     <CommentList />
