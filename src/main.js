@@ -6,6 +6,7 @@ import VeeValidate, { Validator } from 'vee-validate'
 import zhCN from 'vee-validate/dist/locale/zh_CN'
 import relativeTime from './filters/relative-time'
 import checkLogin from './utils/check-login'
+import AppTabbar from './components/app-tabbar'
 
 /**
  * 这个第三包引入即可，它会自动根据页面宽度设置网页基准字体大小
@@ -22,6 +23,8 @@ import 'amfe-flexible'
 import Vant, { Lazyload } from 'vant'
 
 import 'vant/lib/index.css'
+
+Vue.component('app-tabbar', AppTabbar)
 
 // 注册 Vant 的图片懒加载自定义指令
 Vue.use(Lazyload)
